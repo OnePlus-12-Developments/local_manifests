@@ -1,119 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+    <remove-project path="device/qcom/sepolicy_vndr/sm8650" />
+    <remove-project path="vendor/qcom/opensource/usb" />
+    <remove-project path="vendor/qcom/opensource/vibrator" />
+    <remove-project path="hardware/qcom-caf/common" />
+    <remove-project path="hardware/qcom-caf/sm8650/audio/agm" />
+    <remove-project path="hardware/qcom-caf/sm8650/audio/pal" />
+    <remove-project path="hardware/qcom-caf/sm8650/audio/primary-hal" />
+    <remove-project path="hardware/qcom-caf/sm8650/audio/graphservices" />
+    <remove-project path="hardware/qcom-caf/sm8650/dataipa" />
+    <remove-project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" />
+    <remove-project path="hardware/qcom-caf/sm8650/display" />
 
-<remote  name="gh"
-         fetch="https://github.com/" />
+    <remote name="OnePlus-12-Developments" fetch="https://github.com/OnePlus-12-Developments/" />
+    <remote name="yaap" fetch="https://github.com/yaap/" revision="sixteen" />
 
-<remote  name="clo"
-         fetch="https://git.codelinaro.org/clo/"
-         revision="refs/tags/LA.QSSI.16.0-23700-qssi.0" />
+    <project path="device/oneplus/waffle" name="device_oneplus_waffle" remote="OnePlus-12-Developments" revision="A16" />
+    <project path="device/oneplus/sm8650-common" name="device_oneplus_sm8650-common" remote="OnePlus-12-Developments" revision="A16-test" />
 
-<remote  name="yaap-gitlab"
-         fetch="https://gitlab.com/yaosp/" />
+    <project path="vendor/oneplus/waffle" name="proprietary_vendor_oneplus_waffle" remote="yaap" />
+    <project path="vendor/oneplus/sm8650-common" name="proprietary_vendor_oneplus_sm8650-common" remote="yaap" />
 
-<!-- Removed Projects -->
-<remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" />
-<remove-project path="vendor/qcom/opensource/interfaces" />
-<remove-project path="vendor/qcom/opensource/usb" />
-<remove-project path="vendor/qcom/opensource/vibrator" />
-<remove-project path="vendor/qcom/opensource/power" />
-<remove-project path="hardware/qcom-caf/wlan" />
-<remove-project path="hardware/qcom-caf/common" />
-<remove-project path="hardware/qcom-caf/sm8650/audio/agm" />
-<remove-project path="hardware/qcom-caf/sm8650/audio/pal" />
-<remove-project path="hardware/qcom-caf/sm8650/audio/primary-hal" />
-<remove-project path="hardware/qcom-caf/sm8650/audio/graphservices" />
-<remove-project path="hardware/qcom-caf/sm8650/dataipa" />
-<remove-project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" />
-<remove-project path="hardware/qcom-caf/sm8650/display" />
-<remove-project path="device/qcom/sepolicy_vndr/sm8650" />
-<remove-project path="hardware/google/pixel" />
-<remove-project path="hardware/google/pixel-sepolicy" />
-<remove-project path="vendor/qcom/opensource/audio-hal/st-hal" />
-<remove-project path="vendor/qcom/opensource/audio-hal/st-hal-ar-legacy" />
-<remove-project path="hardware/lineage/interfaces" />
+    <project path="kernel/oneplus/sm8650" name="kernel_oneplus_sm8650" remote="yaap" />
+    <project path="kernel/oneplus/sm8650-modules" name="kernel_oneplus_sm8650-modules" remote="yaap" />
+    <project path="kernel/oneplus/sm8650-devicetrees" name="kernel_oneplus_sm8650-devicetrees" remote="yaap" />
 
-<!-- LineageOS OnePlus Device Trees -->
-<project name="OnePlus-12-Developments/device_oneplus_waffle" path="device/oneplus/waffle" remote="gh" revision="infinity-16" />
-<project name="OnePlus-12-Developments/device_oneplus_sm8650-common" path="device/oneplus/sm8650-common" remote="gh" revision="infinity-16" />
+    <project path="hardware/oplus" name="hardware_oplus" remote="OnePlus-12-Developments" revision="A16" />
 
-<!-- LineageOS OnePlus Vendor Trees -->
-<project name="OnePlus-12-Developments/proprietary_vendor_oneplus_waffle" path="vendor/oneplus/waffle" remote="gh" revision="sixteen" />
-<project name="OnePlus-12-Developments/proprietary_vendor_oneplus_sm8650-common" path="vendor/oneplus/sm8650-common" remote="gh" revision="sixteen" />
+    <project path="device/qcom/sepolicy_vndr/sm8650" name="device_qcom_sepolicy_vndr_sm8650" remote="yaap" />
 
-<!-- CLO/AOSPA Stuff -->
-<project path="device/qcom/qssi" name="AOSPA/android_device_qcom_qssi" remote="gh" revision="vauxite" />
-<project path="vendor/qcom/opensource/commonsys/dpm" name="la/platform/vendor/qcom-opensource/dpm-commonsys" remote="clo" />
+    <project path="hardware/qcom-caf/sm8650/audio/agm" name="vendor_qcom_opensource_agm-sm8650" remote="yaap" />
+    <project path="hardware/qcom-caf/sm8650/audio/graphservices" name="vendor_qcom_opensource_audioreach-graphservices-sm8650" remote="yaap" />
+    <project path="hardware/qcom-caf/sm8650/audio/pal" name="vendor_qcom_opensource_arpal-lx-sm8650" remote="yaap" />
+    <project path="hardware/qcom-caf/sm8650/audio/primary-hal" name="hardware_qcom_audio-ar-sm8650" remote="yaap" />
+    <project path="hardware/qcom-caf/sm8650/dataipa" name="vendor_qcom_opensource_dataipa-sm8650" remote="yaap" />
+    <project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr-sm8650" remote="yaap" />
+    <project path="hardware/qcom-caf/sm8650/display" name="hardware_qcom-caf_sm8650_display" remote="yaap" />
+    <project path="hardware/qcom-caf/sm8650/media" name="hardware_qcom-caf_sm8650_media" remote="yaap" />
 
-<!-- LineageOS and YAAP OnePlus Hardware Trees -->
-<project name="OnePlus-12-Developments/hardware_oplus" path="hardware/oplus" remote="gh" revision="sixteen" />
-<project path="device/qcom/common" name="yaap/device_qcom_common" remote="gh" revision="sixteen" />
-<project name="yaap/device_qcom_sepolicy_vndr_sm8650" path="device/qcom/sepolicy_vndr/sm8650" remote="gh" revision="sixteen" />
-<project path="hardware/lineage/interfaces" name="Trijal08/android_hardware_lineage_interfaces" remote="gh" revision="sixteen" />
-<project path="hardware/qcom-caf/sm8650/audio/agm" name="yaap/vendor_qcom_opensource_agm-sm8650" remote="gh" revision="sixteen" />
-<project path="hardware/qcom-caf/sm8650/audio/graphservices" name="yaap/vendor_qcom_opensource_audioreach-graphservices-sm8650" remote="gh" revision="sixteen" />
-<project path="hardware/qcom-caf/sm8650/audio/pal" name="yaap/vendor_qcom_opensource_arpal-lx-sm8650" remote="gh" revision="sixteen" />
-<project path="hardware/qcom-caf/sm8650/audio/primary-hal" name="yaap/hardware_qcom_audio-ar-sm8650" remote="gh" revision="sixteen" />
-<project path="hardware/qcom-caf/sm8650/dataipa" name="yaap/vendor_qcom_opensource_dataipa-sm8650" remote="gh" revision="sixteen" />
-<project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" name="yaap/vendor_qcom_opensource_data-ipa-cfg-mgr-sm8650" remote="gh" revision="sixteen" />
-<project path="hardware/qcom-caf/sm8650/display" name="yaap/hardware_qcom-caf_sm8650_display" remote="gh" revision="sixteen" />
-<project path="hardware/qcom-caf/sm8650/media" name="yaap/hardware_qcom-caf_sm8650_media" remote="gh" revision="sixteen" />
-<project path="hardware/qcom-caf/wlan" name="yaap/hardware_qcom-caf_wlan" remote="gh" revision="sixteen" />
-<project path="hardware/qcom-caf/thermal" name="yaap/hardware_qcom-caf_thermal" remote="gh" revision="sixteen" />
-<project path="hardware/qcom-caf/common" name="yaap/hardware_qcom-caf_common" remote="gh" revision="sixteen" >
-    <!-- add guard for AOSP hardware/qcom dir -->
-    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
-    <!-- add guards for CAF repositories -->
-    <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8953/Android.mk" />
-    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
-    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
-    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8450/audio/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8450/Android.mk" />
-    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8550/audio/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
-    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8650/audio/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8650/Android.mk" />
-</project>
-<project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="yaap/vendor_qcom_opensource_data-ipa-cfg-mgr" remote="gh" revision="sixteen" />
-<project path="vendor/qcom/opensource/core-utils" name="yaap/vendor_qcom_opensource_core-utils" remote="gh" revision="sixteen" />
-<project path="vendor/qcom/opensource/interfaces" name="yaap/vendor_qcom_opensource_interfaces" remote="gh" revision="sixteen" />
-<project path="vendor/qcom/opensource/usb" name="yaap/vendor_qcom_opensource_usb" remote="gh" revision="sixteen" />
-<project path="vendor/qcom/opensource/vibrator" name="yaap/vendor_qcom_opensource_vibrator" remote="gh" revision="sixteen" />
-<project path="vendor/qcom/opensource/power" name="yaap/vendor_qcom_opensource_power" remote="gh" revision="sixteen" />
-<project path="vendor/qcom/common" name="vendor_qcom_common" remote="yaap-gitlab" revision="sixteen" />
-<project path="hardware/google/pixel" name="LineageOS/android_hardware_google_pixel" remote="gh" revision="lineage-23.0" />
-<project path="hardware/google/pixel-sepolicy" name="LineageOS/android_hardware_google_pixel-sepolicy" remote="gh" revision="lineage-23.0" />
-<project path="vendor/qcom/opensource/audio-hal/st-hal" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal" remote="gh" revision="lineage-22.0" />
-<project path="vendor/qcom/opensource/audio-hal/st-hal-ar" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal-ar" remote="gh" revision="lineage-22.0" />
+    <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="yaap">
+        <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+        <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8953/Android.mk" />
+        <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+        <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
+        <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8450/audio/Android.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8450/Android.mk" />
+        <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8550/audio/Android.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
+        <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8650/audio/Android.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8650/Android.mk" />
+    </project>
 
-<!-- Prebuilt Kernel -->
-<!-- project name="yaap/device_oneplus_waffle-kernel" path="device/oneplus/waffle-kernel" remote="github" revision="sixteen" clone-depth="1" / -->
-<!-- project name="TheXPerienceProject/android_device_oneplus_waffle-kernel" path="device/oneplus/waffle-kernel" remote="github" revision="xpe-20.0" clone-depth="1" / -->
+    <project path="hardware/qcom-caf/thermal" name="hardware_qcom-caf_thermal" remote="yaap" />
+    <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="yaap" />
+    <project path="vendor/qcom/opensource/usb" name="vendor_qcom_opensource_usb" remote="yaap" />
 
-<!-- Kernel Source -->
-<project name="OnePlus-12-Developments/anaconda_kernel_oneplus_sm8650" path="kernel/oneplus/sm8650" remote="gh" revision="anaconda-pineapple-waffle-a16" clone-depth="1" />
-<project name="yaap/kernel_oneplus_sm8650-modules" path="kernel/oneplus/sm8650-modules" remote="gh" revision="sixteen" />
-<project name="yaap/kernel_oneplus_sm8650-devicetrees" path="kernel/oneplus/sm8650-devicetrees" remote="gh" revision="sixteen" />
-
-<!-- Extra trees -->
-<!-- project name="Chaitanyakm/vendor_bcr" path="vendor/bcr" remote="gh" revision="main" / -->
-<project name="TogoFire/packages_apps_ViPER4AndroidFX" path="packages/apps/ViPER4AndroidFX" remote="gh" revision="v4a" />
-
+    <project path="packages/apps/KProfiles" name="packages_apps_KProfiles" remote="yaap" />
 </manifest>
