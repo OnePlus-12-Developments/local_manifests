@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="OnePlus-12-Development" fetch="https://github.com/OnePlus-12-Development/" revision="sixteen" />
     <remote name="yaap" fetch="https://github.com/yaap/" revision="sixteen" />
 
-    <project path="device/oneplus/waffle" name="device_oneplus_waffle" remote="A16-evox" />
-    <project path="device/oneplus/sm8650-common" name="device_oneplus_sm8650-common" remote="A16-qpr2" />
-    <project path="hardware/oplus" name="hardware_oplus" remote="sixteen" />
+<remote  name="gh"
+         fetch="https://github.com/" />
+
+    <project path="OnePlus-12-Development/device/oneplus/waffle" name="device_oneplus_waffle" remote="A16-evox" />
+    <project path="OnePlus-12-Development/device/oneplus/sm8650-common" name="device_oneplus_sm8650-common" remote="A16-qpr2" />
+    <project path="OnePlus-12-Development/hardware/oplus" name="hardware_oplus" remote="sixteen" />
 
     <project path="vendor/oneplus/waffle" name="proprietary_vendor_oneplus_waffle" remote="yaap" />
     <project path="vendor/oneplus/sm8650-common" name="proprietary_vendor_oneplus_sm8650-common" remote="yaap" />
