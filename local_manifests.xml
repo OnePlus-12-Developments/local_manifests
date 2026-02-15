@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remove-project path="device/qcom/sepolicy_vndr/sm8650" />
-    <remove-project path="vendor/qcom/opensource/usb" />
-    <remove-project path="vendor/qcom/opensource/vibrator" />
-    <remove-project path="hardware/qcom-caf/common" />
-    <remove-project path="hardware/qcom-caf/sm8650/audio/agm" />
-    <remove-project path="hardware/qcom-caf/sm8650/audio/pal" />
-    <remove-project path="hardware/qcom-caf/sm8650/audio/primary-hal" />
-    <remove-project path="hardware/qcom-caf/sm8650/audio/graphservices" />
-    <remove-project path="hardware/qcom-caf/sm8650/dataipa" />
-    <remove-project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" />
-    <remove-project path="hardware/qcom-caf/sm8650/display" />
-
-    <remote name="OnePlus-12-Developments" fetch="https://github.com/OnePlus-12-Developments/" />
+    <remote name="OnePlus-12-Development" fetch="https://github.com/OnePlus-12-Development/" revision="sixteen" />
     <remote name="yaap" fetch="https://github.com/yaap/" revision="sixteen" />
 
-    <project path="device/oneplus/waffle" name="device_oneplus_waffle" remote="OnePlus-12-Developments" revision="A16" />
-    <project path="device/oneplus/sm8650-common" name="device_oneplus_sm8650-common" remote="OnePlus-12-Developments" revision="A16-test" />
+    <project path="device/oneplus/waffle" name="device_oneplus_waffle" remote="A16-evox" />
+    <project path="device/oneplus/sm8650-common" name="device_oneplus_sm8650-common" remote="A16-qpr2" />
+    <project path="hardware/oplus" name="hardware_oplus" remote="sixteen" />
 
     <project path="vendor/oneplus/waffle" name="proprietary_vendor_oneplus_waffle" remote="yaap" />
     <project path="vendor/oneplus/sm8650-common" name="proprietary_vendor_oneplus_sm8650-common" remote="yaap" />
@@ -24,8 +13,6 @@
     <project path="kernel/oneplus/sm8650" name="kernel_oneplus_sm8650" remote="yaap" />
     <project path="kernel/oneplus/sm8650-modules" name="kernel_oneplus_sm8650-modules" remote="yaap" />
     <project path="kernel/oneplus/sm8650-devicetrees" name="kernel_oneplus_sm8650-devicetrees" remote="yaap" />
-
-    <project path="hardware/oplus" name="hardware_oplus" remote="OnePlus-12-Developments" revision="A16" />
 
     <project path="device/qcom/sepolicy_vndr/sm8650" name="device_qcom_sepolicy_vndr_sm8650" remote="yaap" />
 
