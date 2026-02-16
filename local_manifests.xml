@@ -10,7 +10,7 @@
 <project name="OnePlus-12-Developments/device_oneplus_sm8650-common" path="device/oneplus/sm8650-common" remote="gh" revision="A16" />
 
 <!-- LineageOS OnePlus Vendor Trees -->
-<project name="OnePlus-12-Developments/proprietary_vendor_oneplus_waffle" path="vendor/oneplus/waffle" remote="gh" revision="lineage-23.2" clone-depth="1" />
+<project name="OnePlus-12-Developments/proprietary_vendor_oneplus_waffle" path="vendor/oneplus/waffle" remote="gh" revision="lineage-23.2" />
 <project name="OnePlus-12-Developments/proprietary_vendor_oneplus_sm8650-common" path="vendor/oneplus/sm8650-common" remote="gh" revision="lineage-23.2" />
 
 
