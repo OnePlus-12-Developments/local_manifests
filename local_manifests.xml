@@ -19,7 +19,7 @@
 <project name="OnePlus-12-Developments/android_hardware_oplus" path="hardware/oplus" remote="gh" revision="A16" />
 
 <!-- Kernel Source -->
-<project name="OnePlus-12-Developments/android_kernel_oneplus_sm8650" path="kernel/oneplus/sm8650" remote="gh" revision="lineage-23.2-ksu" clone-depth="1" />
+<project name="OnePlus-12-Developments/android_kernel_oneplus_sm8650" path="kernel/oneplus/sm8650" remote="gh" revision="lineage-23.2-ksu" />
 <project name="OnePlus-12-Developments/android_kernel_oneplus_sm8650-modules" path="kernel/oneplus/sm8650-modules" remote="gh" revision="lineage-23.2" />
 <project name="OnePlus-12-Developments/android_kernel_oneplus_sm8650-devicetrees" path="kernel/oneplus/sm8650-devicetrees" remote="gh" revision="lineage-23.2" />
 
