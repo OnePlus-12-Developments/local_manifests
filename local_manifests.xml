@@ -16,7 +16,7 @@
 
 
 <!-- LineageOS Hardware Trees -->
-<project name="OnePlus-12-Developments/hardware_oplus" path="hardware/oplus" remote="gh" revision="A16" />
+<project name="OnePlus-12-Developments/android_hardware_oplus" path="hardware/oplus" remote="gh" revision="A16" />
 
 <!-- Kernel Source -->
 <project name="OnePlus-12-Developments/android_kernel_oneplus_sm8650" path="kernel/oneplus/sm8650" remote="gh" revision="lineage-23.2-ksu" clone-depth="1" />
